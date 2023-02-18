@@ -1,0 +1,527 @@
+@font-face {
+  font-family: "badfont2regular";
+  src: url("https://AtHomeGaming-Theme.athomegaming12.repl.co/CakeZombie.otf")
+}
+
+* {
+	font-family: 'badfont2regular';
+}
+
+* {
+	box-sizing: border-box;			/* For Your Health */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	
+	--ss-header-height: 10em;
+	--ss-footer-height: 4em;
+	--ss-main-width: 90em;
+	--ss-min-width: 68em;
+	
+	--ss-space-xxl: 2.3em;
+	--ss-space-xl: 1.5em;
+	--ss-space-lg: 1em;
+	--ss-space-md: calc(var(--ss-space-lg)/2);
+	--ss-space-sm: calc(var(--ss-space-md)/1.5);
+	--ss-space-xs: calc(var(--ss-space-sm)/2);
+	--ss-space-micro: calc(var(--ss-space-xs)/2);
+	
+	--ss-transparent: #00000000;
+	--ss-black: #000;
+	--ss-white: #ebffe0; /*White Text*/
+	--ss-offwhite: #FFF3E4;
+	--ss-yellow0:#003610; /* word PREMIUM in shop*/
+	--ss-yellow: #00ff3c;
+	--ss-yolk0: #00ff00; /*top half of shawdow in buttons*/
+	--ss-yolk: #004002; /*Yellow Buttons*/
+	--ss-yolk2: #000000; /*bottom half of shawdow in buttons*/
+	--ss-red0: #000000; /*top line on PREMINIUM flag*/
+	--ss-red: #239e47; /*back button in inventory*/
+	--ss-red2: #003d0e; /*outline of back button in inventory and bottom line on PREMINIUM flag*/
+	--ss-red-bright: #16822f; /*hover on diamond button*/
+	--ss-pink: #9ed13f; /*diamond button*/
+	--ss-pink1: #00ff3c;
+	--ss-pink-light: #00ff3c;
+	--ss-brown: #4c8a00; /*Outline of buttons*/
+	--ss-blue00: #00ff3c; /*Outline of gun button*/
+	--ss-blue0: #047000; /*stats background*/
+	--ss-blue1: #003d17; /*social and button shawdow*/
+	--ss-blue2: url("https://i.pinimg.com/originals/9c/59/84/9c59841ab822ed3b9fcdaf8734e6d9af.gif"); /*right panel bg*/
+	--ss-blue3: #06ad03; /*Lighter Box Borders*/
+	--ss-blue4: #003809; /*Blue Subtitles, Darker Box Borders, and text*/
+	--ss-blue5: #173618; /*Buttons, some button outline, buttons on right panel hover, stats item right text color*/
+	--ss-green0: #00ff6e; /* top shadow on shoping cart button*/
+	--ss-green1: #009c50; /* shoping cart button*/
+	--ss-green2: #004d1d; /* bottom shadow on shoping cart button*/
+	--ss-orange1: #00ff3c;
+	--ss-vip-gold: linear-gradient(to right, #D1A943, #CFCDAF, #CC8630, #D1AA44, #CC8630);
+	--ss-clear: rgba(255, 255, 255, 0);
+	--ss-blue2clear: rgba(94, 186, 217, 0);
+	--ss-shadow: rgba(0,0,0,0.4);
+	--ss-blueshadow: #5a7d18; /*shadow of diamond button*/
+	--ss-darkoverlay: rgba(0, 0, 0, 0.8);
+	--ss-darkoverlay2: rgba(0, 0, 0, 0.2);
+	--ss-lightoverlay: url("https://cdn.discordapp.com/attachments/931980621570506752/939968096494551040/wp8651689.png"); /*Main Background, point.*/
+	--ss-lightbackground: linear-gradient(var(--ss-blue1), var(--ss-blue2));
+	--ss-blueblend1: url("https://i.pinimg.com/originals/9c/59/84/9c59841ab822ed3b9fcdaf8734e6d9af.gif"); /*Some Box fill colors*/
+	--ss-scrollmask1: linear-gradient(var(--ss-blue2clear), var(--ss-blue2));
+	--ss-scrollmask2: linear-gradient(rgba(56, 158, 192, 0), #005216); /*shadow on twitch tab*/
+	--ss-fieldbg: linear-gradient(#567a14, #ffffff, #ffffff, #ffffff, #ffffff); /*left panle bg*/
+	--ss-white-60: rgba(255,255,255,.6);
+	--ss-white-90: rgba(255,255,255,.9);
+
+	--ss-me-player-bg: url("https://steamuserimages-a.akamaihd.net/ugc/947328846227908360/916717B0250BF8244BF6D265D724D4B0E7F323EB/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"); /*FFA Namplate*/
+	--ss-them-blue-bg: rgba(20, 87, 0, 0.8);
+	--ss-them-blue-color: #53eb07;
+	--ss-them-red-bg:  rgba(0, 133, 55, 0.8);
+	--ss-them-red-color: #355c21
+	--ss-me-red-bg: rgba(255,65,69,.8);
+	--ss-me-blue-bg: rgba(123, 217, 94, 0.8);
+
+	scrollbar-width: none;
+    scrollbar-color: var(--ss-yolk) var(--ss-white);
+}
+
+  #mainFooter:after { /* Added Code  */
+content: 'Made by: AtHomeGaming ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎' !important;
+  font-family: 'badfont2regular';
+
+    text-align: center;
+
+  align-items: center;
+
+  font-weight: 100;
+    font-size: 1.7em;
+    letter-spacing: 0.01em;
+color: #00db42;
+
+  }
+
+.playerSlot-them {
+  background-image: linear-gradient(
+    90deg,
+    #001908 0%,
+    #001908 100%
+  );
+  background-size: 400%;
+  animation: shift-color 6s infinite alternate;
+}
+
+
+.playerSlot--icons .vip-egg {
+	text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  content: url('https://cdn11.bigcommerce.com/s-fgvmf62le/images/stencil/1024x1024/products/774/2531/patch-skull-green__22201.1574905387.png?c=2') !important;
+  max-height: 1.3em;
+  max-width: 1.3em;
+}
+
+.popup_lg {
+	background: url("https://i.pinimg.com/originals/9c/59/84/9c59841ab822ed3b9fcdaf8734e6d9af.gif");
+	border: var(--ss-space-sm) solid var(--ss-blue3);
+	padding: var(--ss-space-xxl);
+}
+.box_blue2 {
+	padding: var(--ss-space-lg);
+	background-color: transparent;
+}
+.pause-bg {
+	background: #00000026;
+	padding: var(--ss-space-md);
+	text-align: center;
+	border: 1px solid black;
+	flex: 1 0 auto;
+}
+.account_eggs {
+	display: flex;
+	vertical-align: center;
+	height: 2.3em;
+	min-width: 6.4em;
+	background: url("https://cdn.discordapp.com/attachments/931980621570506752/939968096196775956/background-color-brightness-colors-wallpaper-preview.jpg");
+	text-align: right;
+	padding: 0.05em var(--ss-space-lg) 0 var(--ss-space-md);
+	position: relative;
+
+}
+.crosshair {
+	position: absolute;
+	transform-origin: 50% top;
+	top: 50%;
+	border: solid 0.05em limegreen;
+	margin-bottom: 0.12em;
+	opacity: 0.7;
+
+	left: calc(50% - 0.15em);
+	background: limegreen;
+	width: 0.3em;
+}
+.crosshair.normal {
+	left: calc(50% - 0.15em);
+	background: limegreen;
+	width: 0.3em;
+}
+.crosshair.powerful {
+	left: calc(50% - 0.25em);
+	background: green;
+	width: 0.5em;
+}
+#stat_item h4 {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin: 0.4em var(--ss-space-md);
+	padding: 0;
+	color: #48c500;
+	font-family: 'badfont2regular';
+}
+
+#best_streak_container h1 {
+	margin: 0; padding: 0;
+	display: inline;
+
+	text-shadow: var(--ss-space-micro) var(--ss-space-micro) var(--ss-shadow);
+
+	font-family: 'badfont2regular' !important;
+	font-size: 2.5em !important;
+	color: var(--ss-white) !important;
+	font-weight: bold !important;
+	text-transform: lowercase;
+
+	padding-left: 1.4em;
+	padding-top: 0em;
+
+	background-image: url('https://cdn.discordapp.com/attachments/931980621570506752/946355202670350336/Poisoned-removebg-preview.png');
+    background-position: left center;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#killBox h3, #deathBox h3 {
+	font-weight: 800;
+	margin: 0;
+	color: #00d000d2;
+	font-family: 'badfont2regular';
+}
+#killBox h2, #deathBox h2 {
+	font-size: 2em; 
+	line-height: 1em;
+	margin: 0;
+	font-weight: 900;
+	color: green;
+	font-family: 'badfont2regular';
+	text-transform: none !important;
+}
+#chatIn {
+	display: none;
+	color: #a9fd93;
+	bottom: 1em;
+	left: 1em;
+	width: 30%;
+	border: none;
+	background: none;
+}
+#readouts {
+	position: absolute;
+	top: 2.2em;
+	right: 0em;
+	display: block; 
+	text-align: right; 
+	color: #000(37, 59, 0);
+	font-weight: bold;
+	clear: both;
+	font-size: 1.3em !important;
+	text-transform: uppercase;
+	line-height: 1em;
+	white-space: nowrap;
+	z-index: 6;
+}
+#maskmiddle {
+	background: url('https://myclientsites.com/adamx/toxictheme/scope.png') center center no-repeat;
+	background-size: contain;
+	width: 100vh;
+	height: 100vh;
+}
+#ammo {
+	text-align: right;
+	font-size: 3.25em;
+	font-family: 'badfont2regular';
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0;
+	
+	padding-right: 1.2em;
+	padding-top: 0em;
+	margin-bottom: 0.1em;
+
+	background-image: url('https://cdn.discordapp.com/attachments/931980621570506752/939968096939155497/imgonline-com-ua-ReplaceColor-D2WcQvW8z1YxDEW-removebg-preview.png');
+    background-position: right center;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+#eggBreakerTimer {
+	position: absolute;
+	color: #004600;
+	text-shadow: var(--ss-yolk) 0 0 0.1em, black 0 0.1em 0.2em;
+	font-size: 2.5em;
+	font-family: 'badfont2regular';
+	font-weight: 900;
+	text-align: center;
+	width: 100%;
+	top: 24%;
+}
+#hardBoiledValue {
+	font-family: 'badfont2regular';
+    font-weight: bold;
+    color: #00d440c9;
+    font-size: 1.6em;
+    transform: translateY(-2.6em);
+}
+.healthYolk {
+	fill: #00411b;
+}
+.healthBar {
+	transform-origin: center;
+	transform: rotate(90deg);
+	fill: transparent;
+	stroke: #74da00;
+	stroke-width: 1em;
+	stroke-dasharray: 14.4513em;
+	transition: all 0.3s ease-in-out;
+}
+#healthHp {
+	font-family: 'badfont2regular';
+    font-weight: bold;
+    color: black;
+    font-size: 1.7em;
+    transform: translateY(-3.9em);
+}
+#healthHp {
+	font-family: 'badfont2regular';
+    font-weight: bold;
+    color: white;
+    font-size: 1.7em;
+    transform: translateY(-3.9em);
+}
+#healthContainer {
+	position: absolute;
+	left: 50%; bottom: 1em;
+	transform: translateX(-50%);
+	display: inline-block;
+	width: 6em; height: 6em;
+	background: #00801570;
+	border-radius: 50%;
+	text-align: center;
+}
+#grenadeThrow {
+	width: 100%;
+	height: 50%;
+	border-radius: 0.05em;
+	background: green;
+}
+#killBox h3{
+  display:none;
+}
+
+#killBox::before{
+  font-size: 1em;
+  font-weight: 900;
+  content: 'YOU POISONED'!important;
+  color: green;
+}
+#KILL_STREAK::before{
+  display: normal !important;
+}
+#deathBox h3{
+  display:none;
+}
+
+#deathBox::before{
+  font-size: 1em;
+  font-weight: 900;
+  content: 'YOU GOT POISONED BY'!important;
+  color: green;
+  }
+.egg_icon {
+    height: 2em;
+    margin: var(--ss-space-micro) var(--ss-space-sm) 0 0;
+    content: url('https://cdn.discordapp.com/attachments/931980621570506752/947160292805185586/Poisoned-removebg-preview.png');
+
+    }
+
+.hardBoiledShield {
+    position: absolute;
+    transform: translateX(-50%);
+    height: 100%;
+  content: url('http://www.clker.com/cliparts/l/d/D/L/0/7/shield-green-hi.png');
+
+  }
+#hardBoiledShieldFill {
+  content: url('http://www.clker.com/cliparts/l/d/D/L/0/7/shield-green-hi.png');
+
+}
+
+/*here*/
+
+  #mainFooter {
+	display: flex;
+	flex-direction: row;
+	height: var(--ss-footer-height);
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	font-size: 0.8em;
+	letter-spacing: 0.01em;
+	min-width: var(--ss-min-width);
+}
+
+#gameDescription {
+  background: url("https://cdn.discordapp.com/attachments/931980621570506752/939968096494551040/wp8651689.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 105%;
+}
+
+#gameDescription .eggIcon {
+	color: #FFF;
+	padding-top: 0.3em;
+}
+
+#gameDescription li {
+	font-weight: 600;
+}
+
+#chicken_panel {
+	bottom: var(--ss-space-lg);
+	left: var(--ss-space-lg);
+	height: 10em;
+	position: fixed;
+}
+
+#chicken_panel img {
+	width: 9em;
+	position: absolute;
+	bottom: 0;
+	left: var(--ss-space-md);
+}
+
+/* #chicken_panel.new {
+	bottom: -1em;
+    left: -1em;	
+} */
+
+#chicken_panel.new img {
+	left: 0;
+	width: auto;
+}
+#chicken_panel.new .nugget-chick {
+    width: 4.8em;
+    left: 3.5em;
+    bottom: 3em;	
+}
+
+#chicken_panel.new .upgraded-nugget {
+	width: 8em;
+}
+
+#chicken_panel.new .starburst {
+	width: 12em;
+}
+
+.main-footer {
+    width: 100%;
+	align-items: center;
+}
+#footer_links_panel a {
+	text-decoration: none;
+	font-size: 1em;
+	color: var(--ss-blue4);
+	white-space: nowrap;
+	font-weight: 100;
+}
+
+.footer-nav a {
+	margin: 0 var(--ss-space-sm);
+}
+
+.social-icons {
+	margin-left: 1em;
+}
+
+.social-icons .tool-tip {
+	margin: 0;
+}
+
+.social-icons .tool-tip span,
+.social-icons .tool-tip div.tool-tip--bubble {
+	width: 14em;
+    left: 5em;
+	text-transform: uppercase;
+}
+
+.social-icons .tool-tip span:after,
+.social-icons .tool-tip div.tool-tip--bubble:after {
+    left: 25%;
+    top: 84%;
+}
+
+.discord-bubble-img {
+	width: 2.5em;
+}
+
+.social_icons {
+	height: auto;
+	display: flex;
+	align-content: flex-start;
+	bottom: 4.4em;
+	right: var(--ss-space-lg);
+	padding: 0;
+}
+
+.social_icons a {
+	margin: 0;
+	padding: 0;
+	height: 3em;
+}
+
+.social_icon {
+	height: 3em;
+}
+
+.social_icons .icon-wrap {
+	height: 2.4em;
+	width: 2.4em;
+}
+
+.social_icons .fab,
+.social_icons .fas {
+	font-size: 1.5em;
+    line-height: 1.65;
+}
+
+/*-- One Signal position and size -- */
+.onesignal-bell-launcher-button {
+	width: 6.2vh !important;
+	height: 6.2vh !important;
+}
+
+#onesignal-bell-container {
+	bottom: 0.1vh !important;
+	right: 0.1vh !important;
+
+}
+
+.load_screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 20;
+    width: 100%; height: 100%;
+    background: url('https://cdn.discordapp.com/attachments/931980621570506752/1039526182116397066/loading_gif_2.gif');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 105%;
+}
+
+  
+/*end of stolen*/
