@@ -82,7 +82,6 @@
 }
 
   #mainFooter:after { /* Added Code  */
-content: 'Made by: AtHomeGaming ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎' !important;
   font-family: 'badfont2regular';
 
     text-align: center;
